@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Read QR Code</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <script defer src="./script.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="heading">Read QR Code</h1>
+      <div class="drag-area">
+        <div class="image-upload">
+          <label for="img-upload" class="image-upload__label">
+            <input
+              type="file"
+              id="img-upload"
+              class="image-upload__input"
+              accept="image/png, image/gif, image/jpeg"
+            />
+            <div>
+              <h4>Drag & drop or Browse</h4>
+              <p>*Only PNG,GIF or JPEG image</p>
+            </div>
+          </label>
+        </div>
+      </div>
+      <div class="result">
+        <h2 class="heading-tertiary">Scanned Qr</h2>
+        <textarea
+          class="textarea"
+          placeholder="Scan a QR code to view the results here"
+        ></textarea>
+        <button class="btn">Copy to Clipboard</button>
+      </div>
+    </div>
+  </body>
+</html>
